@@ -32,7 +32,7 @@ def test_stack_many_pop(stack):
     stack.push("something")
     stack.push("completely")
     stack.push("different")
-    assert "different completely something".split(" ") == stack.popMany(3)
+    assert "different completely something".split(" ") == stack.pop_many(3)
 
 
 def test_stack_many_pop_illegal_amount(stack):

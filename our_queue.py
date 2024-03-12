@@ -20,8 +20,8 @@ class Queue(Generic[T]):
 
     def __init__(self, capacity: int):
         self._elements: Array[T] = Array(capacity)
-        self._front: int = -1
-        self._rear: int = -1
+        self._front: int = 0
+        self._rear: int = 0
         self._empty: bool = True
 
         # for traversals
